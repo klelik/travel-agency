@@ -16,18 +16,38 @@
   padding: 0 1rem;
   margin-bottom: 2rem;
   border-radius: 0.3rem;
-  border: 1px solid #2a2a2a;
+  border: 1px solid #9797976a;
 }
 
 .form-container textarea {
   padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 0.3rem;
-  border: 1px solid #2a2a2a;
+  border: 1px solid #9797976a;
 }
 
 .form-container button {
-  display: inline;
+  height: 56px;
+  background-color: #c49044;
+  color: #ffffff;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  border: 0;
+  border-radius: 100px;
+  padding: 0 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+  font-weight: 600;
+  box-shadow: 0px 4px 8px rgb(0 8 32 / 24%), 0px 1px 4px rgb(0 8 32 / 10%);
 }
 
 @media screen and (max-width: 850px) {

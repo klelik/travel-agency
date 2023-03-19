@@ -11,7 +11,9 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems">
-        <a href="/"><h1 className="navbar-logo">Travel</h1></a> {/* need to make this route */}
+        <a href="/">
+          <h1 className="navbar-logo">Travel</h1>
+        </a>
 
         <div className="menu-icons" onClick={this.handleClick}>
           <i

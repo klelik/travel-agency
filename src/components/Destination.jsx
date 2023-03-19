@@ -13,7 +13,7 @@ function Destination () {
 
       <DestinationData
         className="first-des"
-        heading="Manali"
+        heading="Africa"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illum sed consequatur recusandae! Repellat dolorem suscipit repellendus quibusdam doloremque accusantium, minima quidem vel alias ea explicabo aut! Quidem, eum nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nisi eveniet exercitationem quos ipsum quidem suscipit adipisci veniam eligendi quaerat sint culpa itaque nihil, natus assumenda voluptas fugit esse mollitia!"
         img1={Mountain1}
         img2={Mountain2}
@@ -21,7 +21,7 @@ function Destination () {
 
       <DestinationData
         className="first-des-reverse"
-        heading="Jammu & Kashmir"
+        heading="South America"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illum sed consequatur recusandae! Repellat dolorem suscipit repellendus quibusdam doloremque accusantium, minima quidem vel alias ea explicabo aut! Quidem, eum nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nisi eveniet exercitationem quos ipsum quidem suscipit adipisci veniam eligendi quaerat sint culpa itaque nihil, natus assumenda voluptas fugit esse mollitia!"
         img1={Mountain3}
         img2={Mountain4}

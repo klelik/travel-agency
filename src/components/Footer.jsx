@@ -1,6 +1,6 @@
 import "./FooterStyles.css";
 
-function Footer () {
+function Footer() {
   return (
     <div className="footer">
       <div className="top">
@@ -9,7 +9,7 @@ function Footer () {
           <p>Choose your favourite destination.</p>
         </div>
         <div>
-          <a href="/">
+          <a href="https://github.com/klelik">
             <i className="fa-brands fa-github-square"></i>
           </a>
           <a href="/">
@@ -53,6 +53,6 @@ function Footer () {
       </div>
     </div>
   );
-};
+}
 
 export default Footer;

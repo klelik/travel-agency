@@ -2,9 +2,9 @@ import "./HeroStyles.css";
 import Search from "./Search";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper";
-import Image1 from "../assets/1.jpg";
-import Image2 from "../assets/2.jpg";
-import Image3 from "../assets/3.jpg";
+import Image1 from "../assets/2.jpg";
+import Image2 from "../assets/slide2.jpeg";
+import Image3 from "../assets/slide3.jpeg";
 import "swiper/css";
 import "swiper/css/autoplay";
 
