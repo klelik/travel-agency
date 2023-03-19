@@ -1,0 +1,245 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  gap: 40px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 0px 40px 4px 40px;
+  z-index: 1;
+  box-shadow: 0px 1px 4px rgba(220, 221, 225, 0.12),
+    0px 4px 8px rgb(0 8 32 / 8%);
+  position: relative;
+}
+
+.header > button {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  padding: 12px 0 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #556685;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* header animation underline */
+.header > button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #c49044;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 300ms;
+}
+
+.header > button:hover::after,
+.header > button:focus::after {
+  transform: scale(1);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 1px 4px rgb(0 8 32 / 12%), 0px 4px 8px rgb(0 8 32 / 8%);
+}
+
+.pack {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 19px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  padding: 0 12px;
+  height: 56px;
+  background-color: #ffffff;
+  border: 1px rgb(218, 218, 218) solid;
+  /* box-shadow: 0 4px 8px rgb(0 8 32 / 24%), 0 1px 4px rgb(0 8 32 / 10%); */
+  width: 95%;
+}
+
+.search-bar {
+  padding: 0 2rem;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-bar span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+
+.divider {
+  border-left: 1px solid #e2e2e2;
+  height: 100%;
+}
+
+.pick {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.date-pick {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 19px;
+  height: 100%;
+  width: 150px;
+  position: relative;
+  cursor: pointer;
+}
+
+.airport-pick {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 19px;
+  height: 100%;
+  cursor: pointer;
+}
+.people-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+  padding: 0 6px;
+  cursor: pointer;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-wrapper button {
+  height: 56px;
+  background-color: #c49044;
+  color: #ffffff;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  border: 0;
+  border-radius: 100px;
+  padding: 0 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+  font-weight: 600;
+  box-shadow: 0px 4px 8px rgb(0 8 32 / 24%), 0px 1px 4px rgb(0 8 32 / 10%);
+}
+
+.button-wrapper:hover .icon {
+  scale: 1.2;
+}
+
+.search span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: rgb(182, 182, 182);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.picker {
+  transition: all 0.2s ease-in-out;
+}
+
+.picker:active {
+  scale: 0.99;
+}
+
+.search .icon {
+  font-size: 19px;
+  /* line-height: 1.5; */
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.date-wrapper {
+  position: absolute;
+  top: 282px;
+  margin-left: -38px;
+}
+
+@media screen and (max-width: 950px) {
+  .pack {
+    flex-direction: column;
+  }
+  .header {
+    /* padding: 0px 90px 5px 70px; */
+    padding: 5px 90px 8px 70px;
+  }
+  .search {
+    border-top-right-radius: 0;
+  }
+  .search-container {
+    flex-direction: column;
+    width: 100%;
+    box-shadow: none;
+    border: 1px rgb(218, 218, 218) solid;
+    height: 76px;
+    border-radius: 15px;
+  }
+  .search-bar {
+    padding: 10px 2rem;
+    border-bottom: 1px rgb(218, 218, 218) solid;
+    width: 109%;
+  }
+  .divider1 {
+    display: none;
+  }
+
+  .button-wrapper button {
+    height: 45px;
+  }
+
+  .date-wrapper {
+    top: 360px;
+    margin-left: -15px;
+  }
+}

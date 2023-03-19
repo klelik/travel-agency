@@ -1,0 +1,16 @@
+node_modules
+build
+dist
+/result*
+.DS_STORE
+*-debug.log
+.nyc_output
+coverage
+.dir-locals.el
+.idea
+.projectile
+.vscode
+.cache-loader
+*.iml
+target
+*-error.log
