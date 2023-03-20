@@ -48,7 +48,7 @@ function Footer() {
           <h4>Others</h4>
           <a href="/">Terms of Services</a>
           <a href="/">Privacy Policy</a>
-          <a href="/">CopyrightⒸ2023 TravelEase</a>
+          <a href="/">CopyrightⒸ2023 Travel</a>
         </div>
       </div>
     </div>
