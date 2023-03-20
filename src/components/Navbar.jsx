@@ -11,9 +11,9 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems">
-        <a href="/">
+        <Link to={"/"}>
           <h1 className="navbar-logo">Travel</h1>
-        </a>
+        </Link>
 
         <div className="menu-icons" onClick={this.handleClick}>
           <i
