@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/travel-agency/static/css/main.248020a4.css",
-    "main.js": "/travel-agency/static/js/main.2469ebd5.js",
-    "static/media/3.jpg": "/travel-agency/static/media/3.84d5235cc693e15661d6.jpg",
-    "static/media/2.jpg": "/travel-agency/static/media/2.bbb41348bb839b9124d8.jpg",
-    "static/media/1.jpg": "/travel-agency/static/media/1.509d4d795248ac9962f3.jpg",
+    "main.css": "/travel-agency/static/css/main.5958b035.css",
+    "main.js": "/travel-agency/static/js/main.b5733822.js",
+    "static/media/5.jpg": "/travel-agency/static/media/5.31094d8180a1d1f59950.jpg",
+    "static/media/slide3.jpeg": "/travel-agency/static/media/slide3.d19cad439f2787a8f2a7.jpeg",
+    "static/media/3.jpg": "/travel-agency/static/media/3.d01e61a5c275778ff880.jpg",
+    "static/media/8.jpg": "/travel-agency/static/media/8.2eec36ce4c205c2f6f31.jpg",
+    "static/media/4.jpg": "/travel-agency/static/media/4.1665196b2352a11aaf54.jpg",
+    "static/media/slide2.jpeg": "/travel-agency/static/media/slide2.ab37a18ed4f2b8aa3e1f.jpeg",
+    "static/media/6.jpg": "/travel-agency/static/media/6.aac8ed15b0c9a7217197.jpg",
+    "static/media/2.jpg": "/travel-agency/static/media/2.faf6c5a02b50a954b9af.jpg",
+    "static/media/1.jpg": "/travel-agency/static/media/1.8f608c03efac3b635aa5.jpg",
     "static/media/12.jpg": "/travel-agency/static/media/12.257c5311e1cae5638aad.jpg",
-    "static/media/8.jpg": "/travel-agency/static/media/8.9d1ddd2ceb0e8def6f48.jpg",
-    "static/media/5.jpg": "/travel-agency/static/media/5.46b372902997b3fbd648.jpg",
-    "static/media/6.jpg": "/travel-agency/static/media/6.c405c8228d51cdef5d0f.jpg",
-    "static/media/4.jpg": "/travel-agency/static/media/4.0c7885e97d08f0a61db1.jpg",
-    "static/media/night.jpg": "/travel-agency/static/media/night.ac6d287d5d0014553b87.jpg",
     "index.html": "/travel-agency/index.html",
-    "main.248020a4.css.map": "/travel-agency/static/css/main.248020a4.css.map",
-    "main.2469ebd5.js.map": "/travel-agency/static/js/main.2469ebd5.js.map"
+    "main.5958b035.css.map": "/travel-agency/static/css/main.5958b035.css.map",
+    "main.b5733822.js.map": "/travel-agency/static/js/main.b5733822.js.map"
   },
   "entrypoints": [
-    "static/css/main.248020a4.css",
-    "static/js/main.2469ebd5.js"
+    "static/css/main.5958b035.css",
+    "static/js/main.b5733822.js"
   ]
 }
