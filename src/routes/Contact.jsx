@@ -8,12 +8,7 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <Hero
-        cName="hero"
-        heroImg={AboutImg}
-        title="Contact"
-        hide="hide"
-      />
+      <Hero cName="hero" heroImg={AboutImg} title="Contact" hide="hide" />
       <ContactForm />
       <Footer />
     </>

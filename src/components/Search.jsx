@@ -9,14 +9,52 @@ import { format } from "date-fns";
 
 import "react-datepicker/dist/react-datepicker.css";
 
+function Modal({ setActiveDestination }) {
+  return (
+    <div className="menu shown" id="Menu">
+      <form className="form">
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit">
+          <i className="fa fa-search"></i>
+        </button>
+      </form>
+      <ul>
+        {[
+          { title: "Destination1", id: 1 },
+          { title: "Destination2", id: 2 },
+          { title: "Destination3", id: 3 },
+          { title: "Destination4", id: 4 },
+          { title: "Destination5", id: 5 },
+        ].map((destination) => (
+          <li
+            key={destination.id}
+            onClick={() => {
+              setActiveDestination(destination.title);
+            }}
+          >
+            <MdLocationPin className="icon" />
+            {destination.title}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 function Search() {
   const [active, setActive] = useState("");
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const [activeDates, setActiveDates] = useState("");
+  const [modal, setModal] = useState(false);
+
   const [activeDestination, setActiveDestination] = useState(
     "eg. Travel destination"
   );
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
 
   const onChange = (dates) => {
     const [start, end] = dates;
@@ -29,7 +67,7 @@ function Search() {
     );
   };
 
-  const toggle = (name) => {
+  const toggleActive = (name) => {
     setActive(name);
   };
 
@@ -47,52 +85,24 @@ function Search() {
               <div
                 className="search-bar picker"
                 onClick={() =>
-                  active === "popover" ? toggle("") : toggle("popover")
+                  active === "popover"
+                    ? toggleActive("")
+                    : toggleActive("popover")
                 }
               >
                 <span>{activeDestination}</span>
               </div>
               {active === "popover" && (
-                <div className="menu shown" id="Menu">
-                  {/* more content here */}
-                  <form className="form">
-                    <input
-                      type="text"
-                      placeholder="Search.."
-                      name="search"
-                    />
-                    <button type="submit">
-                      <i class="fa fa-search"></i>
-                    </button>
-                  </form>
-                  <ul>
-                    {[
-                      "Destination1",
-                      "Destination2",
-                      "Destination3",
-                      "Destination4",
-                      "Destination5",
-                    ].map((destination) => (
-                      <li
-                        onClick={() => {
-                          setActiveDestination(destination);
-                          setActive("");
-                        }}
-                      >
-                        <MdLocationPin className="icon" />
-                        {destination}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <Modal setActiveDestination={setActiveDestination} />
               )}
-              {/* {active === "popover" && <Popover />} */}
               <div className="pick">
                 <div className="divider divider1"></div>
                 <div
                   className="date-pick picker"
                   onClick={() =>
-                    active == "datePicker" ? toggle("") : toggle("datePicker")
+                    active === "datePicker"
+                      ? toggleActive("")
+                      : toggleActive("datePicker")
                   }
                 >
                   <MdDateRange className="icon" />
@@ -122,7 +132,7 @@ function Search() {
                 </div>
               </div>
             </div>
-            <div className="button-wrapper">
+            <div className="button-wrapper" onClick={toggleModal}>
               <button>
                 <MdOutlineSearch className="icon" /> Search{" "}
               </button>
@@ -130,6 +140,25 @@ function Search() {
           </div>
         </div>
       </div>
+      {modal && (
+        <div className="modal">
+          <div className="modal-content">
+            <div className="modal-header">
+              <span className="close" onClick={toggleModal}>
+                &times;
+              </span>
+              <h2>Modal Header</h2>
+            </div>
+            <div className="modal-body">
+              <p>Some text in the Modal Body</p>
+              <p>Some other text...</p>
+            </div>
+            <div className="modal-footer">
+              <h3>Modal Footer</h3>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

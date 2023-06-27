@@ -5,6 +5,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Service from "./routes/Service";
 import Contact from "./routes/Contact";
+import Test from "./routes/Test";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/Test" element={<Test />} />
         <Route path="*" element={<p>Path not resolved</p>} />
       </Routes>
     </div>

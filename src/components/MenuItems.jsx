@@ -3,29 +3,35 @@ export const MenuItems = [
     title: "Home",
     url: "/",
     cName: "nav-links",
-    icon: "fa-solid fa-house-user"
+    icon: "fa-solid fa-house-user",
   },
   {
     title: "About",
     url: "/about",
     cName: "nav-links",
-    icon: "fa-solid fa-circle-info"
+    icon: "fa-solid fa-circle-info",
   },
   {
     title: "Service",
     url: "/service",
     cName: "nav-links",
-    icon: "fa-solid fa-briefcase"
+    icon: "fa-solid fa-briefcase",
   },
   {
     title: "Contact",
     url: "/contact",
     cName: "nav-links",
-    icon: "fa-solid fa-address-book"
+    icon: "fa-solid fa-address-book",
+  },
+  {
+    title: "Test",
+    url: "/test",
+    cName: "nav-links",
+    icon: "fa-solid fa-wand-magic-sparkles",
   },
   {
     title: "Sign Up",
     url: "/signup",
-    cName: "nav-links-mobiles"
-  }
+    cName: "nav-links-mobiles",
+  },
 ];
